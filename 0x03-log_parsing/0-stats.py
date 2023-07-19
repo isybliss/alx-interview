@@ -33,7 +33,8 @@ if __name__ == "__main__":
                 file_size = int(list[-1])
                 total_file_size += file_size
                 status_code = list[-2]
-                status_code_dict[status_code] += 1
+                if status_code in status_code_dict:
+                    status_code_dict[status_code] += 1
             except exception:
                 pass
 
