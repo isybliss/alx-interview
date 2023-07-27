@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 A method that determines if a given data set represents
-a valid UTF-8 encoding 
+a valid UTF-8 encoding
 """
 
 
@@ -11,7 +11,7 @@ def validUTF8(data):
     Args:
         data(list): data set containing multiple characters
     Returns:
-        boolean: true if the data is valid utf-8 encoded, 
+        boolean: true if the data is valid utf-8 encoded,
         otherwise false
     """
     utf8valid = 0
@@ -28,4 +28,3 @@ def validUTF8(data):
             return False
         utf8valid = max(utf8valid - 1, 0)
     return utf8valid == 0
-
